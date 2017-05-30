@@ -446,7 +446,7 @@ public class MaterialEditText extends AppCompatEditText {
     initPadding();
     initText();
     initFloatingLabel();
-//    initTextWatcher();
+    initTextWatcher();
     checkCharactersCount();
   }
 
@@ -480,10 +480,10 @@ public class MaterialEditText extends AppCompatEditText {
         checkCharactersCount();
         if (autoValidate) {
           validate();
+          postInvalidate();
         } else {
           setError(null);
         }
-        postInvalidate();
       }
     });
   }
