@@ -446,7 +446,7 @@ public class MaterialEditText extends AppCompatEditText {
     initPadding();
     initText();
     initFloatingLabel();
-    initTextWatcher();
+//    initTextWatcher();
     checkCharactersCount();
   }
 
